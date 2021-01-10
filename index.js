@@ -1,21 +1,10 @@
-const mysql = require('mysql');
+const UsuarioService = require('././UsuarioService');
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'teste123',
-    database: 'biblioteca'
-});
+let usuarioService = new UsuarioService();
 
-
-connection.connect();
-
-connection.query('SELECT * FROM usuario LIMIT 2', function (error, results, fields) {
-
-    if (error) throw error;
-
-    console.log(results);
-
-});
-
-connection.end();
+usuarioService.listarUsuarios()
+    .then(usuarios => console.log(usuarios))
+    .catch(erro => {
+        
+        console.log(`Ocorreu um erro, tente mais tarde ; [. Descrição: ${erro}`);
+    })
