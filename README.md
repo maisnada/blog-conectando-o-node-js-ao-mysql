@@ -2,4 +2,4 @@
 
 # Conectando o Node.js ao Mysql
 
-Código fonte do post publicado no blog https://maisnada.dev/conectando-o-node-js-ao-mysql/
+Código fonte do post https://maisnada.dev/conectando-o-node-js-ao-mysql/
