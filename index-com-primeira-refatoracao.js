@@ -32,4 +32,4 @@ function imprimir(lista){
 
 const connection = obterConnction();
 
-listarUsuarios(connection);
+listarUsuarios();
