@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
 connection.connect();
 
 connection.query('SELECT * FROM usuario LIMIT 2', function (error, results, fields) {
-
+   
     if (error) throw error;
 
     console.log(results);
